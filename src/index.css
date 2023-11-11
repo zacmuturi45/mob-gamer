@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-fill-color: rgb(108, 102, 102);
   background-color: black;
+  background-size: cover;
 }
 
 code {
