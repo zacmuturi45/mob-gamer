@@ -8,6 +8,9 @@ body {
   -webkit-text-fill-color: rgb(108, 102, 102);
   background-color: rgb(1, 1, 1);
   background-size: cover;
+  background-color: rgb(21, 21, 23);
+  background-size: cover;
+  -webkit-text-fill-color: rgb(108, 101, 101);
 }
 
 code {
@@ -22,9 +25,7 @@ code {
   margin-right: 55px;
   margin-top: 150px;
   float: right;
-  border-radius: 15px;
 }
-
 
 
 .pictures{
@@ -42,10 +43,6 @@ code {
 .displayimage {
   width: 100%;
   height: 600px;
-}
-
-.navlink{
-  
 }
 
 .form{
@@ -82,7 +79,7 @@ code {
   height: 50px;
   border-radius: 8px;
   background-color: rgb(29, 29, 163);
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: rgb(120, 115, 115);
   font-size: large;
 }
 
@@ -96,4 +93,16 @@ code {
 
 .notflexy{
   display: none;
+}
+
+.mims{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.sect{
+  margin-top: 80px;
+  font-size: 30px;
+  font-weight: bolder;
 }

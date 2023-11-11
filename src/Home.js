@@ -46,9 +46,9 @@ function Home() {
         <div>
             <div className="firstimage" >
                 <img className="displayimage" onClick={() => handleClick()} src={firstImage[0].url} />
-                
+                <div className="mims">CLICK MEEEEEE!!!</div>
             </div>
-            <div>
+            <div className="toimg">
                 {imagesToDisplay}
             </div>
         </div>
