@@ -6,6 +6,7 @@ function Home() {
 
     const [firstArray, setFirstArray] = useState([]);
     const [firstImage, setFirstImage] = useState([{url: 'https://media.istockphoto.com/id/538665020/photo/internet-meme-why-you-no-rage-face-3d-illustration.jpg?s=612x612&w=0&k=20&c=5D_g8Jy8kqg5Op2bb4RvcH8_6y0HGPqt29TKDrEqLyM='}]);
+    const [displayClick, setDisplayClick] = useState(false);
 
     useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
@@ -29,18 +30,25 @@ function Home() {
     }
 
 
+    function handleClick() {
+        setDisplayClick(!displayClick);
+
+    }
+
+
+
     const imagesToDisplay = firstArray.map((images) => (
-        <li className="arrayimages" key={images.id} onClick={() => handleMeme(images.id)} ><img className="pictures" src={images.url} alt={images.name} /></li>
+        <li className={displayClick? "arrayimages" : "notflexy"} key={images.id} onClick={() => handleMeme(images.id)} ><img className="pictures" src={images.url} alt={images.name} /></li>
     ));
 
 
     return (
         <div>
-            <div className="firstimage">
-                <img className="displayimage" src={firstImage[0].url} />
+            <div className="firstimage" >
+                <img className="displayimage" onClick={() => handleClick()} src={firstImage[0].url} />
                 
             </div>
-            <div className="flexy">
+            <div>
                 {imagesToDisplay}
             </div>
         </div>
