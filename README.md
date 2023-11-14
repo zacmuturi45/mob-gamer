@@ -1,4 +1,4 @@
-## Find.Music
+## Meme Generator
 Meme page is an application that shows the most popular meme images for easy downloading. Feel free to caption and share.
 
 ## How it works.
